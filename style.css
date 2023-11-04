@@ -1,0 +1,439 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    display: grid;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+
+.header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0px 1px 1px white;
+}
+
+.header_contain {
+    grid-area: header;
+    display: grid;
+    justify-content: center;
+}
+
+.nav {
+    width: 100%;
+}
+
+.nav_list {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    width: 100%;
+    gap: 5%;
+    line-height: 1px;
+    font-size: 45px;
+}
+
+.nav_item {
+    margin-right: 5%;
+}
+
+.nav_item-last {
+    margin-right: 0;
+}
+
+.nav_button {
+    width: 200px;
+    height: 60px;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    border: white 0.5px solid;
+    background: transparent;
+    color: white;
+}
+
+.nav_button:hover {
+    color:brown;
+    border: brown 1px solid;
+    cursor: pointer;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(50px, auto);
+}
+
+.bio {
+    grid-column: 1/3;
+    padding: 60px 10px;
+}
+
+.bio_contain {
+    display: grid;
+    grid-auto-flow: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.bio_img {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-right: 5%;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: white solid 2px;
+}
+
+.bio_img-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.bio_hello {
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.bio_desc {
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.football_contain {
+    display: grid;
+    color: white;
+}
+
+.design_contain {
+    height: 100%;
+    display: grid;
+    color: white;
+}
+
+.hobby_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: white solid 1px;
+}
+
+.hobby_info-1 {
+    background-image: url('img/stadium_!.jpg');
+    background-size: cover;
+}
+
+.hobby_info-2 {
+    background-image: url('img/pixel_!.jpg');
+    background-size: cover;
+}
+
+.hobby_title {
+    display: flex;
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.hobby_description {
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.title {
+    grid-column: 1/3;
+}
+
+.learn {
+    grid-column: 1/3;
+}
+
+.learn_contain {
+    display: grid;
+    grid-area: learn;
+    color: white;
+}
+
+.des {
+    grid-column: 1/2;
+}
+
+.des_contain {
+    display: grid;
+    grid-area: des;
+    color: white;
+}
+
+.sport {
+    grid-column: 2/3;
+}
+
+.sport_contain {
+    height: 100%;
+    display: grid;
+    grid-area: sport;
+    color: white;
+}
+
+.target_title {
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.target_item {
+    padding: 12px;
+    border: white solid 1px;
+}
+
+.target_name {
+    font-size: 35px;
+    line-height: 40px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+
+.target_description {
+    font-size: 25px;
+}
+
+.footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0px -1px 1px white;
+    margin-top: 50px;
+}
+
+.footer_contain {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.footer_text {
+    display: grid;
+    grid-auto-flow: column;
+    padding: 5px;
+    font-size: 33px;
+    font-weight: 100;
+}
+
+.footer_contact {
+    margin-right: 40px;
+}
+
+.summary {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    grid-column: 1/3;
+}
+
+.sum_contain {
+    display: grid;
+    color: white;
+    font-family: 'Merriweather', serif;
+}
+
+.sum_profile {
+    text-align: center;
+    font-size: 50px;
+}
+
+.sum_info {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    padding: 0px 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sum_info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2%;
+}
+
+.info_title {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 200;
+}
+
+.info_profession {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.info_pair {
+    display: flex;
+    justify-content: center;
+    column-gap: 1%;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.adj_pair {
+    display: grid;
+    grid-auto-flow: row;
+    margin-top: 30px;
+}
+
+.info_first {
+    text-align: center;
+    font-weight: 400;
+}
+
+.info_second {
+    font-weight: 100;
+}
+
+.adj_text {
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+    padding: 7px 9px;
+}
+
+.sum_img {
+    display: grid;
+    width: 450px;
+    height: 600px;
+    overflow: hidden;
+    flex-shrink: 0;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.sum_img:hover {
+    width: 500px;
+    height: 650px;
+    transition: all 1s ease 0s;
+}
+
+.sum_img-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.intro {
+    grid-column: 1/3;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.intro_contain {
+    display: grid;
+    text-align: center;
+    color: white;
+}
+
+.intro_title {
+    font-size: 40px;
+    font-weight: 200;
+}
+
+
+.history {
+    grid-column: 1/3;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.history_contain {
+    color: white;
+}
+
+.history_item {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+.history_item-first {
+    background-image: url('img/jeep\ копия.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.history_item-second {
+    background-image: url('img/volk\ копия.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.history_item-third {
+    background-image: url('img/kia\ копия.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.history_info {
+    height: 100%;
+    text-align: center;
+}
+
+.history_name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+}
+
+.history_fact {
+    margin-top: 10px;
+    font-weight: 200;
+}
